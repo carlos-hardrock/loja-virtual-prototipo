@@ -1,0 +1,102 @@
+ /* Style the table */
+ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  /**
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  **/
+
+  .itens {
+    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+    width: 100%;
+    height: 260px; /* gives an initial height of 260px to the table */
+  }
+
+ .itens table thead th {
+    position: sticky; /* make the table heads sticky */
+    top: 0px; /* table head will be placed from the top of the table and sticks to it */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: white;
+    color: black;
+  }
+
+  .alinhar-direita {
+    text-align: right;
+  }
+
+  .alinhar-esquerda{
+    text-align: left;
+  }
+
+  .centralizar{
+    text-align: center;
+  }
+
+  .div-consumidor {
+    width: 100%; 
+    text-align: left;
+  }
+  .div-consumidor table thead th:first-child {
+    width: 40%;
+  }
+
+  .div-botoes {
+    padding-top: 10px;
+    width: 100%; 
+    text-align: right;
+  }
+
+  .div-botoes input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+  }
+
+  .div-botoes button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+  }
+
+  .cabecalho {
+    width: 100%;
+    display:flex;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    padding-right: 1%;
+  }
+  .cabecalho div {
+    width: 100%;
+  }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #E9E9ED!important;
+  }
+  .buscar {
+    width: 100%;
+    display:flex;
+    margin-bottom: 5px;
+  }
+
+  .buscar div {
+    width: 100%;
+  }
+
+
+
+
+ 
+
