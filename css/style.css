@@ -95,6 +95,20 @@
     width: 100%;
   }
 
+  #navbar a.active {
+    border-bottom: 1px solid black;
+  }
+
+  #navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #navbar-items .nav-item {
+    margin: 0 1em;
+  }
+
 
 
 
