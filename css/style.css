@@ -45,6 +45,11 @@
     width: 100%; 
     text-align: left;
   }
+
+  .div-consumidor table {
+    width: 100%;
+  }
+
   .div-consumidor table thead th:first-child {
     width: 40%;
   }
@@ -69,6 +74,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 3px;
+    font-size: small;
   }
 
   .cabecalho {
@@ -108,6 +114,12 @@
   #navbar-items .nav-item {
     margin: 0 1em;
   }
+
+  /**
+  .table-striped tr:nth-child(odd){
+    background-color: #F8F9FA;
+ }
+ **/
 
 
 

@@ -19,42 +19,47 @@
     </script>  
 
 </head>
-    <body>
-         <!--  MENU PRINCIPAL-->
-         <div id="menu-principal" class="container container-fluid d-flex justify-content-center bg-light align-items-center py-2 fixed-top" style="border-bottom: 1px solid black;">
-            <div class="alinhar-esquerda" style="width: 20%;">
+    <body style="min-width:372px;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top border-bottom shadow-sm">
+            <div class="container">
                 <a href="#" class="navbar-brand">
-                    <i class="bi bi-cart3 px-2 text-dark"></i>
-                    <span class="text-dark">PDV - LIGHT</span>
+                    <i class="bi bi-cart3"></i>
+                    <span>PDV - LIGHT</span>
                 </a>
-            </div>
-            <nav class="navbar navbar-expand bg-light centralizar" id="navbar" style="width: 60%;">
-                <div class="collapse navbar-collapse" id="navbar-items" style="font-size: small;">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <ki class="nav-item">
-                            <a href="#" class="nav-link active text-dark" aria-current="page">PDV</a>
-                        </ki>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <li class="nav-item dropdown" >
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: small;">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cadastro
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: small;">
-                            <li><a class="dropdown-item" href="#">Produto</a></li>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: small;">
                             <li><a class="dropdown-item" href="#">Cliente</a></li>
+                            <li><a class="dropdown-item" href="#">Produto</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Forma de pagamento</a></li>
-                            </ul>
-                        </li>
-                        <ki class="nav-item">
-                            <a href="#" class="nav-link text-dark">Faturamento</a>
-                        </ki>                                                      
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Faturamento</a>
+                    </li>
                     </ul>
                 </div>
-            </nav>
-            <div class="alinhar-direita" style="width: 20%;"> </div>        
-        </div>
-        <!--  MENU PRINCIPAL-->
+            </div>
+    
+        </nav>
+
         <div class="container py-5">
             <div class="buscar pt-5">
                 <div>
@@ -76,10 +81,10 @@
                         <tr>
                             <th>Codigo</th>
                             <th style="width:50%;">Produto</th>
-                            <th class="alinhar-direita">Qtde</th>
+                            <th class="alinhar-esquerda">Qtde</th>
                             <th class="alinhar-direita">Unitário</th>
                             <th class="alinhar-direita">Total</th>
-                            <th>Excluir</th>
+                            <th class="centralizar">Excluir</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -167,14 +172,14 @@
                 </table>
             </div>
             <div class="div-botoes">
-                <button class="btn btn-primary btn-sm text-dark border-secondary">Cancelar</button>
-                <a href="selecionarCliente.html"><button class="btn btn-primary btn-sm text-dark border-secondary">Cliente</button></a>
-                <a href="formaPagto.html"><button class="btn btn-primary btn-sm text-dark border-secondary">Forma de pagto</button></a>
-                <button class="btn btn-primary btn-sm text-dark border-secondary">Finalizar</button>
+                <button type="button" class="btn">Finalizar</button>
+                <button type="button" class="btn">Cancelar</button>
+                <a href="selecionarCliente.html"><button class="btn">Cliente</button></a>
+                <a href="formaPagto.html"><button class="btn">Forma de pagto</button></a>
             </div>
-            <div class="container div-consumidor">
+            <div class="div-consumidor">
                 <br/>
-                <table  class="table table-bordered border-dark">
+                <table class="table table-bordered border-dark">
                     <thead>
                         <tr>
                             <th>Cliente</th> 
@@ -194,9 +199,9 @@
                 </table>
             </div>
         </div>
-        <footer class="border-top fixed-bottom text-muted bg-light">
+        <footer class="border-top fixed-bottom text-muted bg-light shadow">
             <div class="container">
-                <div class="row py-2">
+                <div class="row py-3">
                     <div class="col-12 text-center">
                         &copy 2023 - PDV - LIGHT
                     </div>
